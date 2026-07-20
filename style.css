@@ -1,0 +1,613 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ================= GENERAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar{
+    background:#0d6efd;
+    color:#fff;
+    padding:10px 0;
+    font-size:15px;
+}
+
+.top-bar span{
+    margin-right:20px;
+}
+
+.top-bar i{
+    margin-right:8px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#fff;
+    padding:15px 0;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    font-weight:600;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#0d6efd !important;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hospital.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+    font-weight:700;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+}
+
+.hero .btn{
+
+    padding:14px 35px;
+    border-radius:40px;
+    margin:5px;
+
+}
+
+/* ================= SECTION TITLE ================= */
+
+section{
+
+    padding:80px 0;
+
+}
+
+section h2{
+
+    font-size:42px;
+    font-weight:700;
+    color:#0d6efd;
+    margin-bottom:15px;
+
+}
+
+section p{
+
+    color:#666;
+
+}
+
+/* ================= WHY CHOOSE US ================= */
+
+.card{
+
+    border:none;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+    background:#0d6efd;
+    color:#fff;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.card:hover i,
+.card:hover h4,
+.card:hover p{
+
+    color:#fff !important;
+
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+
+    background:#f8f9fa;
+
+}
+
+.service-box{
+
+    background:#fff;
+    border-radius:15px;
+    padding:35px 25px;
+    text-align:center;
+
+    transition:.4s;
+    cursor:pointer;
+
+}
+
+.service-box i{
+
+    font-size:50px;
+    color:#0d6efd;
+    margin-bottom:20px;
+    transition:.4s;
+
+}
+
+.service-box h4{
+
+    font-size:28px;
+    margin-bottom:15px;
+
+}
+
+.service-box p{
+
+    font-size:16px;
+    color:#666;
+
+}
+
+.service-box:hover{
+
+    background:#0d6efd;
+    transform:translateY(-12px);
+    box-shadow:0 20px 35px rgba(0,0,0,.2);
+
+}
+
+.service-box:hover i,
+.service-box:hover h4,
+.service-box:hover p{
+
+    color:#fff !important;
+
+}
+
+.service-box:hover i{
+
+    transform:scale(1.2) rotate(10deg);
+
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+section h2{
+
+font-size:30px;
+
+}
+
+.service-box{
+
+margin-bottom:20px;
+
+}
+
+}
+/* ================= DOCTOR SECTION ================= */
+
+.doctor-card{
+
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.4s;
+
+}
+
+.doctor-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.doctor-img{
+
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border:6px solid #0d6efd;
+
+}
+
+.doctor-card h3{
+
+    margin-top:15px;
+    font-weight:700;
+
+}
+
+.doctor-card p{
+
+    color:#666;
+
+}
+/* ================= ABOUT ================= */
+
+#about img{
+
+    border-radius:20px;
+    transition:.4s;
+
+}
+
+#about img:hover{
+
+    transform:scale(1.03);
+
+}
+
+#about ul li{
+
+    margin-bottom:12px;
+    font-size:17px;
+
+}
+/* ================= GALLERY ================= */
+
+.gallery-img{
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+    cursor:pointer;
+
+}
+
+.gallery-img:hover{
+
+    transform:scale(1.05);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+/* ================= APPOINTMENT ================= */
+
+.appointment{
+
+    background:#f8f9fa;
+
+}
+
+.appointment-box{
+
+    background:#fff;
+    border-radius:20px;
+
+}
+
+.form-control{
+
+    padding:14px;
+    border-radius:10px;
+
+}
+
+.form-control:focus{
+
+    border-color:#0d6efd;
+    box-shadow:none;
+
+}
+/* ================= REVIEWS ================= */
+
+.review-card{
+
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.review-img{
+
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+    border:4px solid #0d6efd;
+
+}
+
+.stars{
+
+    color:#ffc107;
+    font-size:22px;
+    margin:10px 0;
+
+}
+/* ================= CONTACT ================= */
+
+.contact-box{
+    background:#0d6efd;
+    color:#fff;
+    padding:35px;
+    border-radius:20px;
+    height:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.contact-box h4{
+    color:#fff;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.contact-box p{
+    color:#fff !important;
+    font-size:18px;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.contact-box i{
+    color:#ffc107;
+    margin-right:12px;
+    font-size:20px;
+}
+
+.contact-box hr{
+    border:1px solid rgba(255,255,255,0.3);
+}
+/* ================= FOOTER ================= */
+
+.footer{
+
+    background:#0b1f3a;
+    color:#fff;
+    padding:60px 0 20px;
+
+}
+
+.footer h3,
+.footer h4{
+
+    color:#fff;
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#d6d6d6;
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    list-style:none;
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#d6d6d6;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#0d6efd;
+    padding-left:8px;
+
+}
+
+.social-icons a{
+
+    width:45px;
+    height:45px;
+    background:#fff;
+    color:#0d6efd;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    margin-right:10px;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#0d6efd;
+    color:#fff;
+    transform:translateY(-5px);
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.2);
+    margin:30px 0;
+
+}
+/* ================= WHATSAPP BUTTON ================= */
+
+.whatsapp{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    z-index: 999;
+    transition: .3s;
+}
+
+.whatsapp:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+/* ================= BACK TO TOP ================= */
+
+#topBtn{
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    transition: .3s;
+}
+
+#topBtn:hover{
+    background: #084298;
+    transform: translateY(-5px);
+}
+/* ================= PRELOADER ================= */
+
+#preloader{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:#ffffff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.loader{
+
+    width:70px;
+    height:70px;
+
+    border:8px solid #e9ecef;
+    border-top:8px solid #0d6efd;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
